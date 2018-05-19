@@ -12,7 +12,6 @@
 </template>
 <script>
 import { openURL, QItemSeparator, QField, QInput, QCard, QCardMain, QItem, QItemTile, QList, QPopover, QToggle, QBtn, QModal } from 'quasar'
-import MenuLateral from 'components/MenuLateral'
 import ChartsLojista from 'components/shared/ChartsLojista'
 
 export default {
@@ -54,7 +53,7 @@ export default {
     }
   },
   components: {
-    openURL, MenuLateral, ChartsLojista, QItemSeparator, QField, QInput, QCard, QItem, QList, QPopover, QToggle, QBtn, QModal, QCardMain, QItemTile
+    openURL, ChartsLojista, QItemSeparator, QField, QInput, QCard, QItem, QList, QPopover, QToggle, QBtn, QModal, QCardMain, QItemTile
   }
 }
 </script>

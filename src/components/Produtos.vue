@@ -11,7 +11,6 @@
 </template>
 <script>
 import { openURL, QTable, QItemSeparator, QField, QInput, QCard, QCardMain, QItem, QItemTile, QList, QPopover, QToggle, QBtn, QModal } from 'quasar'
-import MenuLateral from 'components/MenuLateral'
 import DTLojista from 'components/shared/DTLojista'
 
 export default {
@@ -35,7 +34,7 @@ export default {
     }
   },
   components: {
-    openURL, QTable, MenuLateral, DTLojista, QItemSeparator, QField, QInput, QCard, QItem, QList, QPopover, QToggle, QBtn, QModal, QCardMain, QItemTile
+    openURL, QTable, DTLojista, QItemSeparator, QField, QInput, QCard, QItem, QList, QPopover, QToggle, QBtn, QModal, QCardMain, QItemTile
   }
 }
 </script>

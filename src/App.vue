@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import MenuLateral from 'components/MenuLateral'
+import MenuLateral from 'components/shared/MenuLateral'
 import FloatButton from 'components/shared/FloatButton'
 
 export default {
