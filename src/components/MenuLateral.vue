@@ -1,14 +1,12 @@
 <template>
-  <q-layout :view="view">
-    <q-layout-drawer side="left" v-model="left" :content-class="$q.theme === 'mat' ? 'bg-grey-3' : null">
-        <q-list-header class="list-header">Bem vindo {{nome}}</q-list-header>
-          <q-item v-for="item in menus" v-bind:key="item.menu" class="items">
-            <router-link class="links-menu" :to="item.value">
-              {{item.menu}}
-            </router-link>
-          </q-item>
-    </q-layout-drawer>
-  </q-layout>
+  <div class="items-start menu">
+    <q-list-header class="list-header">Bem vindo {{nome}}</q-list-header>
+      <q-item v-for="item in menus" v-bind:key="item.menu" class="items">
+        <router-link class="links-menu" :to="item.value">
+          {{item.menu}}
+        </router-link>
+      </q-item>
+  </div>
 </template>
 <script>
 export default {
@@ -17,8 +15,6 @@ export default {
     return {
       nome: 'Caio',
       versaosistema: 'versão - 0.01',
-      left: true,
-      view: 'hhh lpr fff',
       menus: [
         {
           menu: 'Home',
@@ -31,6 +27,10 @@ export default {
         {
           menu: 'Produtos',
           value: '/produtos'
+        },
+        {
+          menu: 'Pedidos',
+          value: '/pedidos'
         }
       ]
     }

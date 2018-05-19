@@ -11,7 +11,11 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "vue-charts": "^0.2.1"
+    "fs": "0.0.1-security",
+    "vue-bulma-tables-2": "^0.6.36",
+    "vue-charts": "^0.2.1",
+    "vue-tables-2": "^1.4.50",
+    "vue2-datatable-component": "^2.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

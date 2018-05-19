@@ -1,21 +1,19 @@
 <template>
-<div class="row">
-  <div class="col-xl-1">
-    <menu-lateral></menu-lateral>
-  </div>
-  <div class="col-xl-4">
-    <vue-chart class="dashboard-column-chart"
-      :chart-type="chartType"
-      :columns="columns"
-      :rows="rows"
-      :options="options">
-      </vue-chart>
-  </div>
+  <div class="row">
+    <div class="col-xl-12">
+      <charts-lojista class="dashboard-column-chart"
+      :tipoGrafico="chartType"
+      :colunas="columns"
+      :linhas="rows"
+      :opcoes="options">
+      </charts-lojista>
+    </div>
   </div>
 </template>
 <script>
 import { openURL, QItemSeparator, QField, QInput, QCard, QCardMain, QItem, QItemTile, QList, QPopover, QToggle, QBtn, QModal } from 'quasar'
 import MenuLateral from 'components/MenuLateral'
+import ChartsLojista from 'components/shared/ChartsLojista'
 
 export default {
   name: 'Home',
@@ -56,7 +54,7 @@ export default {
     }
   },
   components: {
-    openURL, MenuLateral, QItemSeparator, QField, QInput, QCard, QItem, QList, QPopover, QToggle, QBtn, QModal, QCardMain, QItemTile
+    openURL, MenuLateral, ChartsLojista, QItemSeparator, QField, QInput, QCard, QItem, QList, QPopover, QToggle, QBtn, QModal, QCardMain, QItemTile
   }
 }
 </script>

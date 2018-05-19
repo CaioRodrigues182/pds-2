@@ -1,5 +1,4 @@
 <template>
-    <q-layout class="q-layout-page row justify-center layout-padding">
       <div class="form">
         <q-card class="card-style card">
           <q-card-title align="center">
@@ -21,7 +20,6 @@
           </router-link>
         </q-card>
       </div>
-    </q-layout>
 </template>
 <script>
 import { openURL, QField, QInput, QCardTitle, QCard, QCardMain, QCardSeparator } from 'quasar'
