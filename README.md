@@ -2,5 +2,5 @@
 
 Construido com VueJS (Quasar-Framework)
 
--npm install
+-npm install<br>
 -quasar dev -m pwa
