@@ -1,3 +1,6 @@
-# Quasar App
+# Aplicação construida para lojistas de Delivery
 
-> WIP
+Construido com VueJS (Quasar-Framework)
+
+-npm install
+-quasar dev -m pwa
