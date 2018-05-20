@@ -1,5 +1,5 @@
 export default [
-  {path: '/', component: () => import('components/Login')},
+  {path: '/', name: 'login', component: () => import('components/Login')},
   {path: '/home', component: () => import('components/Home')},
   {path: '/clientes', component: () => import('components/Clientes')},
   {path: '/produtos', component: () => import('components/Produtos')},

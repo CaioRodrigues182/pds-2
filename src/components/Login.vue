@@ -18,6 +18,7 @@
           <router-link to="/home">
             <q-btn color="black" size="lg" label="ENTRAR" class="q-btn full-width bg-primary text-white button" />
           </router-link>
+          <span class="criar-conta">Ou criar uma conta</span>
         </q-card>
       </div>
 </template>

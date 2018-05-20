@@ -1,7 +1,7 @@
 <template>
 <div>
   <q-table class="data-table-cliente"
-    title="Clientes"
+    :title="titulo"
     :data="dados"
     :columns="colunas"
     row-key="name" />
@@ -15,7 +15,8 @@ export default {
   name: 'DTLojista',
   props: {
     dados: Array,
-    colunas: Array
+    colunas: Array,
+    titulo: String
   },
   data () {
     return {

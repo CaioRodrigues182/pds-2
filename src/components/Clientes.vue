@@ -2,7 +2,7 @@
   <div class="col-xl-4 row">
   <div class="col-xl-12">
     <d-t-lojista class="data-table-cliente"
-      title="Clientes"
+      :titulo="'Clientes'"
       :dados="tableData"
       :colunas="columns"
       row-key="name" />
