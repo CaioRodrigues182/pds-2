@@ -15,9 +15,7 @@
             <q-input v-model="email" float-label="Senha" type="email" suffix="" />
           </q-field>
           </q-card-main>
-          <router-link to="/home">
-            <q-btn color="black" size="lg" label="ENTRAR" class="q-btn full-width bg-primary text-white button" />
-          </router-link>
+            <q-btn color="black" size="lg" @click="login()" label="ENTRAR" class="q-btn full-width bg-primary text-white button" />
           <span class="criar-conta">Ou criar uma conta</span>
         </q-card>
       </div>
@@ -43,7 +41,8 @@ export default {
   },
   methods: {
     openURL,
-    goToAcess () {
+    login () {
+      this.$router.push({name: 'home'})
     }
   }
 }

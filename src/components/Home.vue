@@ -16,6 +16,9 @@ import ChartsLojista from 'components/shared/ChartsLojista'
 
 export default {
   name: 'Home',
+  mounted () {
+
+  },
   data () {
     return {
       chartType: 'ColumnChart',
@@ -24,20 +27,17 @@ export default {
         'label': 'Year'
       }, {
         'type': 'number',
-        'label': 'Abril'
-      }, {
-        'type': 'number',
-        'label': 'Maio'
+        'label': 'Quantidade'
       }],
       rows: [
-        ['2004', 1000, 400],
-        ['2005', 1170, 460],
-        ['2006', 660, 1120],
-        ['2007', 1030, 540]
+        ['Março', 1000],
+        ['Abril', 1170],
+        ['Maio', 660],
+        ['Junho', 1030]
       ],
       options: {
-        title: 'Clientes Cadastrados',
-        colors: ['black', 'gray'],
+        title: 'Pedidos por mês',
+        colors: ['black'],
         hAxis: {
           minValue: '2004',
           maxValue: '2007'
@@ -51,6 +51,9 @@ export default {
         height: 450
       }
     }
+  },
+  methods: {
+
   },
   components: {
     openURL, ChartsLojista, QItemSeparator, QField, QInput, QCard, QItem, QList, QPopover, QToggle, QBtn, QModal, QCardMain, QItemTile

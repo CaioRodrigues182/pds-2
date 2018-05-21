@@ -21,16 +21,12 @@ export default {
           value: '/home'
         },
         {
-          menu: 'Clientes',
-          value: '/clientes'
+          menu: 'Pedidos',
+          value: '/pedidos'
         },
         {
           menu: 'Produtos',
           value: '/produtos'
-        },
-        {
-          menu: 'Pedidos',
-          value: '/pedidos'
         }
       ]
     }

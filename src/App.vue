@@ -1,14 +1,12 @@
 <template>
   <div id="q-app">
-    <menu-lateral v-show="checkRoute"></menu-lateral>
+    <menu-lateral v-if="checkRoute"></menu-lateral>
     <router-view />
-    <float-button v-show="checkRoute" />
   </div>
 </template>
 
 <script>
 import MenuLateral from 'components/shared/MenuLateral'
-import FloatButton from 'components/shared/FloatButton'
 
 export default {
   name: 'App',
@@ -33,7 +31,7 @@ export default {
   },
 
   components: {
-    MenuLateral, FloatButton
+    MenuLateral
   }
 }
 
