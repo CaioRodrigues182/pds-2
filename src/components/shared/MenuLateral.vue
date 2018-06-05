@@ -1,11 +1,13 @@
 <template>
   <div class="items-start menu">
-    <q-list-header class="list-header">Bem vindo {{nome}}</q-list-header>
+    <q-list-header class="list-header">Bem vindo, {{nome}} <a href="#" id="sair">Sair</a></q-list-header>
+      <div class="menuSup">
       <q-item v-for="item in menus" v-bind:key="item.menu" class="items">
         <router-link class="links-menu" :to="item.value">
           {{item.menu}}
         </router-link>
       </q-item>
+    </div>
   </div>
 </template>
 <script>

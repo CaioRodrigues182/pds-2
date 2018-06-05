@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-xl-12">
+    <div class="col-x1-12">
       <charts-lojista class="dashboard-column-chart"
       :tipoGrafico="chartType"
       :colunas="columns"

@@ -1,15 +1,44 @@
+.transp{
+   background-color: rgba(0,0,0,0.2)
+  }
+
+.back{
+  position: absolute;
+  background-image: url("transito.jpg");
+  width: 100%;
+  height : 100%;
+      
+  }
+.centraForm {
+   position: relative;
+   width: 300px;
+   min-width: 300px;  
+   height: 305px;
+   top: 50%;
+   left: 50%;
+   margin-left: -150px;
+   margin-top: -150px;
+   color: white; //#D54535
+  
+  }
+
 .card {
   width: 600px
-  position: absolute;
-  left: 600px;
-  top: 200px;
+  position: relative;
 }
 
 .card .criar-conta {
-  position:absolute;
-  left: 225px;
-  top: 300px;
+  position:relative;
+  left: 50%;
+  color: white; //#D54535
+  font-size: 12px;
 }
+
+.card .criar-conta:hover {
+  position:relative;
+  opacity: 0.8;
+  transition: all 0.2s linear;
+  }
 
 .botoes-modal {
   margin-top: 100px;
@@ -20,26 +49,30 @@
   padding: 3px;
 }
 
-.items:hover {
-  background-color:black
-  color:white !important
+.links-menu:hover{
+    transition: all 0.5s linear;
+    color:yellow !important
+    
 }
 
 .dashboard-column-chart {
   margin-left: 20%
   position: absolute;
-  top: 0
+  top: 50px;
 }
 
 a:-webkit-any-link {
   text-decoration:none;
-  color:gray
+  color:white;
 }
 
+
 .q-list-header {
-  font-size: 30px !important
-  background-image: linear-gradient(to right, gray, black);
-  color:white
+  font-size: 25px !important
+  background-color: #D54535
+  color:#FFFFFF;
+  text-align: right;
+  margin-left: 40%;
 }
 
 .card-content {
@@ -61,21 +94,34 @@ a:-webkit-any-link {
 }
 
 .items {
-  padding: 20px
-  font-size: 20px
+  position: relative;
+  padding: 15px
+  font-size: 20px;
+  display inline;
 }
 
+.menuSup{
+  height: 55px;
+  width: 40%;
+  min-width: 300px;
+  padding-top: 15px;
+  margin-top: -55px;
+  background-color: #D54535;
+
+  }
 .menu {
-  width: 15%;
-  height: 100vh;
-  background-color:lightgray;
+  width: 100%;
+  height: 25px;
+  //background-color:lightgray;
+  border-right: 1px solid lightgray;
 }
-
 .data-table-cliente {
-  margin-left: 10%
+  position relative;
+  left: 50%
+  margin-left: -44%;
   width: 88%;
   position:absolute;
-  top: 30px;
+  top: 50px;
 }
 
 .float-action-button {
@@ -85,4 +131,17 @@ a:-webkit-any-link {
   z-index: 100;
   float: bottom;
 }
+
+#sair{
+  padding-right: 10px;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+#sair:hover{
+  color:yellow;
+  transition: all 0.2s linear;
+
+}
+
 
