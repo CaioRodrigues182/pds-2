@@ -1,7 +1,7 @@
 <template>
 <div class="float-action-button">
   <q-fab icon="keyboard_arrow_up" direction="up" color="black">
-    <q-fab-action color="black" @click="openModalProduto()  " class="white" icon="playlist_add" />
+    <q-fab-action color="black" @click="openModalProduto()" class="white" icon="playlist_add" />
   </q-fab>
 
    <q-modal v-model="opened" :content-css="{minWidth: '40vw', minHeight: '50vh'}">
