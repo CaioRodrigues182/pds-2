@@ -1,11 +1,13 @@
 <template>
 <div class="row">
   <div class="col-xl-1">
-     <d-t-lojista class="data-table-cliente"
+     <d-t-lojista
+      class="data-table-cliente"
       :titulo="'Produtos'"
       :dados="tableData"
       :colunas="columns"
-      row-key="name" />
+      row-key="name">
+     </d-t-lojista>
     <float-button />
   </div>
 </div>
@@ -38,6 +40,9 @@ export default {
   },
   components: {
     openURL, QTable, DTLojista, FloatButton, QItemSeparator, QField, QInput, QCard, QItem, QList, QPopover, QToggle, QBtn, QModal, QCardMain, QItemTile
+  },
+
+  methods: {
   }
 }
 </script>

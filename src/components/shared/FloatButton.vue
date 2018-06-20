@@ -50,6 +50,7 @@ export default {
   name: 'FloatButton',
   data () {
     return {
+      text: '',
       opened: false,
       search: ''
     }

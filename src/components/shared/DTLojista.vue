@@ -4,7 +4,9 @@
     :title="titulo"
     :data="dados"
     :columns="colunas"
-    row-key="name" />
+    row-key="name"
+    :slot="excluir"
+    />
 </div>
 
 </template>
@@ -16,7 +18,8 @@ export default {
   props: {
     dados: Array,
     colunas: Array,
-    titulo: String
+    titulo: String,
+    excluir: String
   },
   data () {
     return {

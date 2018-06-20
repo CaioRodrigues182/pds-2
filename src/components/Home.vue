@@ -7,6 +7,12 @@
       :linhas="rows"
       :opcoes="options">
       </charts-lojista>
+    <charts-lojista class="dashboard-pie-chart"
+      :tipoGrafico="chartType"
+      :colunas="columns"
+      :linhas="rows"
+      :opcoes="options">
+      </charts-lojista>
     </div>
   </div>
 </template>
