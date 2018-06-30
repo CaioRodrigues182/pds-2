@@ -1,13 +1,11 @@
 <template>
-  <div class="items-start menu">
-    <q-list-header class="list-header">Bem vindo, {{nome}} <a href="#" id="sair">Sair</a></q-list-header>
-      <div class="menuSup">
-      <q-item v-for="item in menus" v-bind:key="item.menu" class="items">
-        <router-link class="links-menu" :to="item.value">
-          {{item.menu}}
-        </router-link>
-      </q-item>
-    </div>
+  <div class="items-start">
+    <q-tabs position="bottom" color="brand" text-color="yellow-2" align="justify">
+        <q-route-tab default name="Home" icon="home" to="/home" exact slot="title" label="Home"/>
+        <q-route-tab name="Pedidos" icon="inbox" to="/pedidos" exact slot="title" label="Pedidos"/>
+        <q-route-tab name="Produtos" icon="reorder" to="/produtos" exact slot="title" label="Produtos"/>
+      </q-tabs>
+      <p class="sair">Bem vindo, {{nome}} <a href="#" id="sair">Sair</a></p>
   </div>
 </template>
 <script>
@@ -15,19 +13,20 @@ export default {
   name: 'MenuLateral',
   data () {
     return {
-      nome: 'Caio',
+      nome: 'Logista',
       versaosistema: 'versão - 0.01',
-      menus: [
+      tabsModel: 'Home',
+      tabsOptions: [
         {
-          menu: 'Home',
+          label: 'Home',
           value: '/home'
         },
         {
-          menu: 'Pedidos',
+          label: 'Pedidos',
           value: '/pedidos'
         },
         {
-          menu: 'Produtos',
+          label: 'Produtos',
           value: '/produtos'
         }
       ]

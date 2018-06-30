@@ -1,12 +1,12 @@
 <template>
 <div class="float-action-button">
-  <q-fab icon="keyboard_arrow_up" direction="up" color="black">
-    <q-fab-action color="black" @click="openModalProduto()" class="white" icon="playlist_add" />
+  <q-fab icon="keyboard_arrow_up" direction="up" color="brand">
+    <q-fab-action color="brand" @click="openModalProduto()" class="white" icon="playlist_add" />
   </q-fab>
 
    <q-modal v-model="opened" :content-css="{minWidth: '40vw', minHeight: '50vh'}">
     <q-modal-layout>
-        <q-toolbar slot="header" color="black">
+        <q-toolbar slot="header" color="brand">
           <q-btn
             flat
             round

@@ -43,7 +43,7 @@ export default {
       ],
       options: {
         title: 'Pedidos por mês',
-        colors: ['black'],
+        colors: ['#D54535'],
         hAxis: {
           minValue: '2004',
           maxValue: '2007'
