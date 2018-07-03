@@ -4,8 +4,9 @@
         <q-route-tab default name="Home" icon="home" to="/home" exact slot="title" label="Home"/>
         <q-route-tab name="Pedidos" icon="inbox" to="/pedidos" exact slot="title" label="Pedidos"/>
         <q-route-tab name="Produtos" icon="reorder" to="/produtos" exact slot="title" label="Produtos"/>
+        <q-route-tab name="Perfil" icon="account_circle" to="/perfil" exact slot="title" label="Perfil"/>
+
       </q-tabs>
-      <p class="sair">Bem vindo, {{nome}} <a href="#" id="sair">Sair</a></p>
   </div>
 </template>
 <script>
@@ -13,7 +14,6 @@ export default {
   name: 'MenuLateral',
   data () {
     return {
-      nome: 'Logista',
       versaosistema: 'versão - 0.01',
       tabsModel: 'Home',
       tabsOptions: [
@@ -28,6 +28,10 @@ export default {
         {
           label: 'Produtos',
           value: '/produtos'
+        },
+        {
+          label: 'Perfil',
+          value: '/perfil'
         }
       ]
     }

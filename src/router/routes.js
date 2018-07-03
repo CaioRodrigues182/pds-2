@@ -3,6 +3,7 @@ export default [
   {path: '/home', name: 'home', component: () => import('components/Home')},
   {path: '/pedidos', component: () => import('components/Pedidos')},
   {path: '/produtos', component: () => import('components/Produtos')},
+  {path: '/perfil', component: () => import('components/Perfil')},
 
   { // Always leave this as last one
     path: '*',
